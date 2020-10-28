@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.25rem 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+  background: #4f837f;
+  color: #fff;
+  border-color: #4f837f;
+}
+
+.bg-light {
+  background: #f8f9fa !important;
+}
+
+.bg-black {
+  background: #000000 !important;
+}
+
+.mhead {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(75%, rgba(0, 0, 0, 0.7)), to(#000000)), url(../images/bg-masthead.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+
+.mhead h1 {
+  font-size: 130px;
+  color: #fff;
+}
+
+.mhead p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 600;
+}
+
+#mainNav {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+  color: #fff;
+  font-weight: 600;
+}
+
+#mainNav .navbar-brand:hover {
+  color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 8px 10px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 14px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 40px;
+}
+
+#mainNav .navbar-nav > li > a:hover {
+  color: #000;
+}
+
+.about {
+  padding-top: 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(75%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about p {
+  max-width: 700px;
+}
+
+.gallery {
+  padding: 10rem 0;
+}
+
+.gallery .g-text {
+  padding: 0 0 0 2rem;
+  border-left: 0.5rem solid #64a19d;
+  margin-top: 9rem;
+}
+
+.gallery .g-text .h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.g2 {
+  padding: 6rem;
+}
+
+.g2 hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 30%;
+}
+
+.callup {
+  padding: 10rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0.5)), to(#000000)), url(../images/bg-signup.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url(../images/bg-signup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.callup h5 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.callup i {
+  font-size: 2rem;
+}
+
+.callup .form-inline input {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact {
+  padding-top: 5rem;
+}
+
+.contact .card-body {
+  padding: 1rem;
+}
+
+.contact i {
+  font-size: 2rem;
+  color: #4f837f;
+}
+
+.contact hr {
+  border-color: #4f837f;
+  border-width: 0.25rem;
+}
+
+.social a {
+  text-align: center;
+  height: 4rem;
+  width: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+/*# sourceMappingURL=main.css.map */

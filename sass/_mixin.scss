@@ -1,0 +1,12 @@
+@mixin heading-font {
+    
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+@mixin alt-font {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

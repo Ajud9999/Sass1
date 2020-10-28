@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+@import 'variables';
+@import 'mixin';
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.25rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary{
+   background: $primary;  
+   color: $white;
+   border-color:$primary;  
+}
+
+.bg-light{
+  background: $light;
+}
+
+.bg-black{
+ background: $black;
+}
+
+.mhead{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+
+    h1{
+        font-size: 130px;
+        color: $white;
+        
+    }
+
+    p{
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.5) !important;
+        font-weight: 600;
+    }
+}
+
+
+#mainNav{
+    @include heading-font;
+
+    .navbar-brand{
+       color: $white;
+       font-weight: 600;
+       &:hover{
+           color: $white;
+       }
+    }
+
+    .navbar-toggler{
+        font-size: 14px;
+        padding: 8px 10px;
+        color: $white;
+        border: 1px solid $white;
+    }
+    .navbar-nav {
+        > li{
+            >a {
+                font-size: 14px;
+                @include alt-font;
+                color: $white;
+                margin-right: 40px;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+.about{
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+   
+    p{
+        max-width: 700px;
+    }
+}
+
+.gallery{
+    padding: 10rem 0;
+
+    .g-text{
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+        margin-top: 9rem;
+
+        .h4{
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+             line-height: 1.2;
+             
+        }
+
+        
+    }
+}
+
+.g2{
+    padding: 6rem;
+
+    hr{
+        border-color: #64a19d;
+        border-width: 0.25rem;
+        width: 30%;
+    }
+}
+
+
+.callup{
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url(../images/bg-signup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    h5{
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+    
+    i{
+        font-size: 2rem;
+    }
+
+ .form-inline input {
+        box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+        padding: 1.25rem 2rem;
+        height: auto;
+        font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 80%;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        border: 0;
+    }
+}
+
+.contact{
+    padding-top: 5rem;
+
+    .card-body{
+        padding: 1rem;
+    }
+
+   i{
+       font-size: 2rem;
+       color: $primary;
+   }
+
+    hr{
+        border-color: $primary;
+       border-width: 0.25rem;
+    
+    }
+}
+
+.social a {
+    text-align: center;
+    height: 4rem;
+    width: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    line-height: 5rem;
+    color: rgba(255, 255, 255, 0.3);
+}
